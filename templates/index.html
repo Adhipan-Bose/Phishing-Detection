@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phishing Detector</title>
+</head>
+<body>
+
+<h1>Phishing Detection System</h1>
+
+<form method="POST">
+
+<input type="text"
+name="url"
+placeholder="Enter URL"
+required>
+
+<button>
+Check
+</button>
+
+</form>
+
+{% if result %}
+<h2>{{ result }}</h2>
+{% endif %}
+
+</body>
+</html>
